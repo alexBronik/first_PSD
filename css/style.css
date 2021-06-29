@@ -1,0 +1,243 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+body,
+html {
+    height: 100%;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+    box-sizing: border-box;    
+}
+
+
+/*=============first PSD=============*/
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    min-height: 100%;
+}
+/*-------------header-------------*/
+.header {
+    background: #000 url('../img/sloy_81.png') 50% 0 repeat;
+}
+.interior {    
+    margin: 0 auto;
+    padding: 0 128px;
+    max-width: 1280px;
+    align-items: center;        
+}
+.log-parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    padding-top: 27px;
+    padding-bottom: 30px;
+}
+.login-search {
+    margin-bottom: 42px;
+}
+.logo {
+    display: inline-block;
+    width: 209px;
+    height: 142px;
+    background: url(../img/sloy_56.png) 0 no-repeat;
+}
+.login-reg {
+    padding: 0 31px 10px 31px;
+    display: flex;
+    align-items: center;
+}
+.login-reg > a {
+    text-decoration: none;
+    background: linear-gradient(to top, #ecbc35 0%, #f2d77c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #f0cf67;
+    position: relative;
+}
+.login-reg > a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px dashed #ecbc35;
+    top: 100%;
+    right: 0;
+}
+.delimiter {
+    height: 15px;
+    width: 2px;
+    background: linear-gradient(to top, #ecbc35 0%, #f2d77c 100%);
+    margin: 0 5px;    
+}
+.search {
+    background-color: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.25);
+    outline: none; 
+    padding: 6px 30px 6px 11px;
+    color: white;   
+}
+.form-search {
+    position: relative;
+    display: inline-block;
+}
+.form-search > button {
+    position: absolute;
+    cursor: pointer;
+    top: 8%;
+    right: 2px;
+    width: 25px;
+    height: 25px;
+    background: url('../img/sloy_12.png') 4px no-repeat;
+    border: none;
+    padding: 0;
+}
+.search::-webkit-input-placeholder {
+    color: white
+}
+.search::-moz-placeholder {
+    color: white 
+}
+.search::-ms-input-placeholder {
+    color: white
+}
+.header-contacts {
+    margin-bottom: 48px;
+    text-align: center;
+}
+.phone-number {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    margin-bottom: 5px;
+}
+.operator {
+    color: white;
+    font-size: 20px;
+}
+.number {
+    color: white;
+    font-size: 25px; 
+    margin-right: 5px;              
+}
+.drop-arrow {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 1px solid rgba(255,255,255,0.25);
+    background-color: rgba(255,255,255,0.1);
+    position: relative;
+}
+.drop-arrow::before {
+    content:'';
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-right: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    transform: rotate(45deg);
+}
+.back-call {
+    display: inline-block;
+    text-decoration: none;    
+    font-size: 18px;
+    background: linear-gradient(to top, #ecbc35 0%, #f2d77c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #f0cf67; 
+    position: relative;            
+}
+.back-call::after {
+    content:'';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px dashed #ecbc35;
+}
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 127px;
+    border-top: 1px solid rgba(255,255,255,0.25);
+}
+.menu a {
+    line-height: 50px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+}
+.menu span {
+    width: 7px;
+    height: 7px;
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 50%;
+}
+.menu a:hover {    
+    background: linear-gradient(to top, #ecbc35 0%, #f2d77c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #f0cf67;
+}
+.menu a:hover::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    border-top: 1px solid #ecbc35;
+    width: 100%;
+}
+/*-------------main-------------*/
+.main {
+    flex-grow: 1;
+}
+/*-------------footer-------------*/
+.footer {}
